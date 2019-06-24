@@ -1,0 +1,58 @@
+
+regression: []
+
+
+feature_selection:
+  - feature_selection.GenericUnivariateSelect
+  - feature_selection.SelectPercentile
+  - feature_selection.SelectKBest
+  - feature_selection.SelectFpr
+  - feature_selection.SelectFdr
+  - feature_selection.SelectFromModel
+  - feature_selection.SelectFwe
+  - feature_selection.RFE
+  - feature_selection.RFECV
+  - feature_selection.VarianceThreshold
+
+classifiers:
+  - sklearn.ensemble.weight_boosting.AdaBoostClassifier
+  - sklearn.ensemble.bagging.BaggingClassifier
+  - sklearn.naive_bayes.BernoulliNB
+  - sklearn.calibration.CalibratedClassifierCV
+  - sklearn.utils.mocking.CheckingClassifier
+  - sklearn.multioutput.ClassifierChain
+  - sklearn.naive_bayes.ComplementNB
+  - sklearn.tree.tree.DecisionTreeClassifier
+  - sklearn.dummy.DummyClassifier
+  - sklearn.tree.tree.ExtraTreeClassifier
+  - sklearn.ensemble.forest.ExtraTreesClassifier
+  - sklearn.naive_bayes.GaussianNB
+  - sklearn.gaussian_process.gpc.GaussianProcessClassifier
+  - sklearn.ensemble.gradient_boosting.GradientBoostingClassifier
+  - sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier
+  - sklearn.neighbors.classification.KNeighborsClassifier
+  - sklearn.semi_supervised.label_propagation.LabelPropagation
+  - sklearn.semi_supervised.label_propagation.LabelSpreading
+  - sklearn.discriminant_analysis.LinearDiscriminantAnalysis
+  - sklearn.svm.classes.LinearSVC
+  - sklearn.linear_model.logistic.LogisticRegression
+  - sklearn.linear_model.logistic.LogisticRegressionCV
+  - sklearn.neural_network.multilayer_perceptron.MLPClassifier
+  - sklearn.multioutput.MultiOutputClassifier
+  - sklearn.naive_bayes.MultinomialNB
+  - sklearn.neighbors.nearest_centroid.NearestCentroid
+  - sklearn.svm.classes.NuSVC
+  - sklearn.multiclass.OneVsOneClassifier
+  - sklearn.multiclass.OneVsRestClassifier
+  - sklearn.multiclass.OutputCodeClassifier
+  - sklearn.linear_model.passive_aggressive.PassiveAggressiveClassifier
+  - sklearn.linear_model.perceptron.Perceptron
+  - sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis
+  - sklearn.neighbors.classification.RadiusNeighborsClassifier
+  - sklearn.ensemble.forest.RandomForestClassifier
+  - sklearn.linear_model.ridge.RidgeClassifier
+  - sklearn.linear_model.ridge.RidgeClassifierCV
+  - sklearn.linear_model.stochastic_gradient.SGDClassifier
+  - sklearn.svm.classes.SVC
+  - sklearn.ensemble.voting.VotingClassifier
+  
